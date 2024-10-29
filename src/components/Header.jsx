@@ -8,12 +8,16 @@ function Header({ itemList, setItemList }) {
     const [inputText, setInputText] = useState('')
     const [itemNumber, setItemNumber] = useState(0)
 
-    const addHandler = [...itemList];
-    myList.push({
-        inputText,
-        itemNumber,
-    })
-    setItemList(myList)
+    const addHandler = () => {
+        // console.log(itemList)
+        const myList = [...itemList];
+        myList.push({
+            inputText,
+            itemNumber,
+        })
+        console.log(myList)
+        setItemList(myList)
+    }
 
     return (
         <>
@@ -23,12 +27,12 @@ function Header({ itemList, setItemList }) {
             </div>
             <div className="top2">
                 <p>Whhat do you need for your trip</p>
-                <select onChange={(e) => setItemNumber(e.target.value)} >
+                <select onChange={(e) => setItemNumber(e.target.value)}>
                     {
-                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((elem) => {
-                            <option value={elem}>{elem}</option>
+                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((elem) => (
+                            <option>{elem}</option>
 
-                        })
+                        ))
                     }
 
                 </select>
