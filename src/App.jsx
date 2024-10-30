@@ -17,7 +17,7 @@ function App() {
       <div className="container-fluid father">
         <Header itemList={itemList} setItemList={setItemList} />
         <Main itemList={itemList} />
-        <Footer />
+        <Footer itemList={itemList} />
 
       </div>
 

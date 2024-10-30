@@ -16,11 +16,11 @@ function Main({ itemList }) {
           ))
         }
 
-
       </div>
 
       <div className="main2">
-        <button>SORT BY INPUT ORDER</button>
+        <div className='option'></div>
+        <select>SORT BY INPUT ORDER</select>
         <button>CLEAR LIST</button>
       </div>
 

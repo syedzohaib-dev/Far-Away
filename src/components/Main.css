@@ -36,6 +36,15 @@
     border: none;
     outline: none;
 }
+.main2 select {
+    height: 40px;
+    background-color: #ffe7ab;
+    border-radius: 20px;
+    padding-inline: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
 
 .list {
     color: white;
